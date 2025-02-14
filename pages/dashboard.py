@@ -1,5 +1,5 @@
 import streamlit as st
-from ..integration_utils import *
+from integration_utils import *
 from dotenv import load_dotenv
 
 st.write("# Dashboard")
