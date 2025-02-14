@@ -7,9 +7,8 @@ import os
 load_dotenv()
 
 login_url = os.getenv('LOGIN_URL')
-SECRET_KEY = os.getenv('SECRET_KEY')
 
-def extract_query():
+def extract_query(SECRET_KEY):
     query_params = st.query_params
     query = query_params.get("query")
     try:
